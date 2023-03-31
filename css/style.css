@@ -26,19 +26,22 @@ nav input {
     border: none;
 }
 
+nav input:focus-visible {
+    outline: none;
+}
+
 .fa-bell {
     color: #ff8f00 ;
 }
 
 
-
 .mainWrapper {
-    background-color: darkolivegreen;
     height: calc(100vh - 70px);
 }
 
 .sideMenu {
-    background-color: darkblue;
+    background-color: #051e34;
+    background-image: url(../img/sidebar-bg.png);
     width: 70px;
     height: calc(100vh - 70px);
 }
@@ -58,6 +61,10 @@ nav input {
 
 .debugBorder {
     border: 1px solid red;
+}
+
+.debugNone {
+    display: none;
 }
 
 

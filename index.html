@@ -15,16 +15,24 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="container-fluid">
+        <nav class="navbar-expand-lg">
+            <div class="container-fluid ">
                 <div class="row align-items-center">
                     <div class="col-auto">
-                        <img src="./img/mobile-logo.png" id="logoMobile" alt="Mobile Logo">
+                        <img src="./img/mobile-logo.png" id="logoMobile" class="navbar-toggler" alt="Logo Boolean Mobile">
+                        <img src="./img/logo.svg" id="logo" class="collapse navbar-collapse" alt="Logo Boolean">
                     </div>
                     <div class="col">
-                        <div class="py-2 rounded-3 bgGray">
+                        <div class="p-2 my-3 rounded-3 bgGray">
                             <i class="fa-solid fa-magnifying-glass"></i>
                             <input class="ms-1 w-75 bgGray" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="collapse navbar-collapse">
+                            <a href=""><i class="fa-solid fa-list text-secondary me-2"></i></a>
+                            <a href=""><i class="fa-solid fa-circle-question text-secondary me-2"></i></a>
+                            <a href=""><i class="fa-solid fa-ellipsis-vertical text-secondary me-2"></i></a>
                         </div>
                     </div>
                     <div class="col-auto">
@@ -34,10 +42,29 @@
             </div>
         </nav>
     </header>
+
     <main>
         <div class="mainWrapper d-flex">
-            <div class="sideMenu">
 
+            <div class="sideMenu d-flex flex-column text-white align-items-center justify-content-between py-3">
+               <div class="d-flex">
+                    <div class="d-flex flex-column">
+                        <span><i class="fa-solid fa-house"></i></span>
+                        <span><i class="fa-solid fa-chart-simple"></i></span>
+                        <span><i class="fa-solid fa-signal"></i></span>
+                    </div>
+                    <div class="flex-column ms-2 d-none d-lg-flex">
+                        <span>Home</span>
+                        <span>Stats</span>
+                        <span>Signals</span>
+                    </div>
+               </div>
+               <div class="d-flex">
+                    <div>
+                        <i class="fa-solid fa-gear"></i> 
+                    </div>
+                    <div class="ms-2 d-none d-lg-inline-block">Admin</div>
+               </div>
             </div>
 
             <div class="mainContainer">
@@ -51,46 +78,24 @@
 
 
 
-
-
-<!--  <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <div class="navbar-brand">
-                    <img src="./img/mobile-logo.png" id="logo-mobile" class="img-fluid navbar-toggler" alt="Mobile Logo">
-                    <img src="./img/logo.svg" id="logo" class="collapse navbar-collapse" alt="Logo Boolean">
-                </div>
-                <div class="d-flex align-items-center flex-grow-1">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <input type="search" class="form-control w-75" placeholder="Prova a cercare: Lezioni di Laravel">
-                </div>
-                <div>
-                    <i class="fa-solid fa-bell"></i>
-                </div>
-            </div>
-        </nav> -->
-
-
-
-
-
-
-
-
-
-
-
- <!-- <nav class="navbar navbar-expand-lg">
-           
-            <div class="container-fluid">
-                <a class="navbar-brand">
-                    <img src="./img/mobile-logo.png" id="logo-mobile" class="navbar-toggler" alt="Logo Boolean Mobile">
-                    <img src="./img/logo.svg" id="logo" class="collapse navbar-collapse" alt="Logo Boolean">
-                </a>
-                <form class="w-75" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                </form>
-                <div>
-                    <i class="fa-solid fa-bell"></i>
-                </div>
-            </div>
-          </nav>  -->
+<!-- 
+<div class="sideMenu d-flex flex-column text-white align-items-center justify-content-between py-3">
+    <div class="d-flex flex-column">
+        <div>
+            <i class="fa-solid fa-house"></i>
+            <span class="d-none d-lg-inline-block ms-2">Home</span>
+        </div>
+        <div>
+            <i class="fa-solid fa-chart-simple"></i>
+            <span class="d-none d-lg-inline-block ms-2">Stats</span>
+        </div>
+        <div>
+            <i class="fa-solid fa-signal"></i>
+            <span class="d-none d-lg-inline-block ms-2">Signals</span>
+        </div>
+    </div>
+    <div>
+        <i class="fa-solid fa-gear"></i>
+        <span class="d-none d-lg-inline-block ms-2">Admin</span>
+    </div>    
+</div> -->
