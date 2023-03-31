@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.bgGray {
+    background-color:#dedbdb;
+}
+
+/* header */
+
+header {
+    height: 70px;
+}
+
+#logoMobile {
+    height: 60px;
+}
+
+nav input {
+    border: none;
+}
+
+.fa-bell {
+    color: #ff8f00 ;
+}
+
+
+
+.mainWrapper {
+    background-color: darkolivegreen;
+    height: calc(100vh - 70px);
+}
+
+.sideMenu {
+    background-color: darkblue;
+    width: 70px;
+    height: calc(100vh - 70px);
+}
+
+.mainContainer {
+    background-color: antiquewhite;
+    flex-grow: 1;
+    height: calc(100vh - 70px);
+    overflow-y: auto;
+}
+
+
+
+
+
+/* debug */
+
+.debugBorder {
+    border: 1px solid red;
+}
+
+
+
+
+
+
+@media screen and (min-width: 992px) {
+    .sideMenu {
+        width: 150px;
+    }
+}
