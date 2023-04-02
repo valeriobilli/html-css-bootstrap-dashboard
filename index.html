@@ -17,19 +17,19 @@
     <header>
         <nav class="navbar-expand-lg">
             <div class="container-fluid ">
-                <div class="row align-items-center">
+                <div class="row align-items-center justify-content-between">
                     <div class="col-auto">
                         <img src="./img/mobile-logo.png" id="logoMobile" class="navbar-toggler" alt="Logo Boolean Mobile">
                         <img src="./img/logo.svg" id="logo" class="collapse navbar-collapse" alt="Logo Boolean">
                     </div>
                     <div class="col">
-                        <div class="p-2 my-3 rounded-3 bgGray">
+                        <div class="p-2 my-3 rounded-3 bgGray d-flex align-items-center">
                             <i class="fa-solid fa-magnifying-glass"></i>
-                            <input class="ms-1 w-75 bgGray" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+                            <input class="ms-1 bgGray w-75" type="search" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
                         </div>
                     </div>
-                    <div class="col-auto">
-                        <div class="collapse navbar-collapse">
+                    <div class="col-auto d-none d-lg-flex">
+                        <div>
                             <a href=""><i class="fa-solid fa-list text-secondary me-2"></i></a>
                             <a href=""><i class="fa-solid fa-circle-question text-secondary me-2"></i></a>
                             <a href=""><i class="fa-solid fa-ellipsis-vertical text-secondary me-2"></i></a>
@@ -45,8 +45,7 @@
 
     <main>
         <div class="mainWrapper d-flex">
-
-            <div class="sideMenu d-flex flex-column text-white align-items-center justify-content-between py-3">
+            <div class="sideMenu d-flex flex-column text-white align-items-center justify-content-between py-4">
                <div class="d-flex">
                     <div class="d-flex flex-column">
                         <span><i class="fa-solid fa-house"></i></span>
@@ -67,7 +66,32 @@
                </div>
             </div>
 
-            <div class="mainContainer">
+            <div class="mainContainer container-fluid">
+               <div class="row bg-primary text-white py-3 gy-3">
+                    <div class="col-12 col-md-4 col-lg-4 col-xl-2 order-md-3 d-flex justify-content-md-end align-items-center">
+                        <div>Nuovo Studente</div>
+                        <button class="btn btn-outline-light ms-3"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4 col-xl-6">
+                        <div class="mb-2">
+                            <span class="fs-3">Boolean</span>
+                            <span class="badge rounded-pill bgDarkBlue">Piano blaze</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <span class="badge rounded-pill bgDarkBlue">3 app</span>
+                            <i class="fa-solid fa-angles-right ms-1"></i>
+                            <span class="badge rounded-pill bgDarkBlue ms-1 d-lg-none"> + </span>
+                            <span class="badge rounded-pill bgDarkBlue ms-1 d-none d-xl-inline-block">Boolean mobile app</span>
+                            <span class="badge rounded-pill bgDarkBlue ms-1 d-none d-xl-inline-block">Boolean web app</span>
+                            <span class="badge rounded-pill bgDarkBlue ms-1 d-none d-xl-inline-block">Boolean blog app</span> 
+                        </div>
+                        
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4 col-xl-4">
+                        <div>Studenti online negli ultimi 30 minuti</div>
+                        <div class="fs-3">125</div>
+                    </div>
+               </div>
             </div>
 
         </div>
@@ -78,24 +102,4 @@
 
 
 
-<!-- 
-<div class="sideMenu d-flex flex-column text-white align-items-center justify-content-between py-3">
-    <div class="d-flex flex-column">
-        <div>
-            <i class="fa-solid fa-house"></i>
-            <span class="d-none d-lg-inline-block ms-2">Home</span>
-        </div>
-        <div>
-            <i class="fa-solid fa-chart-simple"></i>
-            <span class="d-none d-lg-inline-block ms-2">Stats</span>
-        </div>
-        <div>
-            <i class="fa-solid fa-signal"></i>
-            <span class="d-none d-lg-inline-block ms-2">Signals</span>
-        </div>
-    </div>
-    <div>
-        <i class="fa-solid fa-gear"></i>
-        <span class="d-none d-lg-inline-block ms-2">Admin</span>
-    </div>    
-</div> -->
+

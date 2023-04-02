@@ -12,6 +12,10 @@ body {
     background-color:#dedbdb;
 }
 
+.bgDarkBlue {
+    background-color: #165bba;
+}
+
 /* header */
 
 header {
@@ -24,6 +28,7 @@ header {
 
 nav input {
     border: none;
+    flex-grow: 1;
 }
 
 nav input:focus-visible {
@@ -34,10 +39,13 @@ nav input:focus-visible {
     color: #ff8f00 ;
 }
 
+/* main */
 
 .mainWrapper {
     height: calc(100vh - 70px);
 }
+
+/* sidemenu */
 
 .sideMenu {
     background-color: #051e34;
@@ -46,15 +54,14 @@ nav input:focus-visible {
     height: calc(100vh - 70px);
 }
 
+/* maincontainer */
+
 .mainContainer {
     background-color: antiquewhite;
     flex-grow: 1;
     height: calc(100vh - 70px);
     overflow-y: auto;
 }
-
-
-
 
 
 /* debug */
