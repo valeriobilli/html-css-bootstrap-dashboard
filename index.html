@@ -265,21 +265,22 @@
 
                     <!-- sezione destra -->
                     <div class="col-12 col-lg-4">
+                        <!-- todo list -->
                         <div class="card mt-3">
                             <div class="card-header h4">Todo</div>
                             <div class="card-body">
                                 <ul class="list-group">
                                     <li class="list-group-item">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">Kickoff nuove classi</label>
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheck1">
+                                        <label class="form-check-label" for="flexCheck1">Kickoff nuove classi</label>
                                     </li>
                                     <li class="list-group-item">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">Lezione su Bootstrap 5 in classe #75</label>
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheck2">
+                                        <label class="form-check-label" for="flexCheck2">Lezione su Bootstrap 5 in classe #75</label>
                                     </li>
                                     <li class="list-group-item">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">Controllare username github studenti</label>
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheck3">
+                                        <label class="form-check-label" for="flexCheck3">Controllare username github studenti</label>
                                     </li>
                                 </ul>
                             </div>
@@ -314,78 +315,94 @@
         </div>
 
         <!-- offcanvas -->
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
               <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-                <div class="row">
-                    <div class="col-6">
-                        <div>Nome</div>
-                        <input type="text" class="form-control" placeholder="Nome">
+                <form action="">
+                    <div class="row gy-3">
+                        <div class="col-12 col-lg-6">
+                            <label for="name">Nome</label>
+                            <input type="text" class="form-control" id="name" placeholder="Nome">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <label for="surname">Cognome</label>
+                            <input type="text" class="form-control" id="surname" placeholder="Cognome">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <label for="email">Email</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="addon-wrapping">@</span>
+                                <input type="text" class="form-control" placeholder="Email" id="email" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <label for="email">Conferma email</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="addon-wrapping">@</span>
+                                <input type="text" class="form-control" placeholder="Email" id="confirmEmail" aria-label="Username" aria-describedby="addon-wrapping">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <label for="password">Conferma password</label>
+                            <input type="password" class="form-control" id="confirmPassword">
+                        </div>
+                        <div class="col-12">
+                            <label for="address">Indirizzo</label>
+                            <input type="text" class="form-control" id="address" placeholder="Indirizzo">
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <label for="city">Città</label>
+                            <input type="text" class="form-control" id="city" placeholder="Città">
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <label for="country">Stato</label>
+                            <select class="form-select" id="country" aria-label="Default select example">
+                                <option selected>Scegli...</option>
+                                <option value="1">Italia</option>
+                                <option value="2">Francia</option>
+                                <option value="3">Spagna</option>
+                                <option value="3">Germania</option>
+                                <option value="3">Grecia</option>
+                                <option value="3">Portogallo</option>
+                                <option value="3">Svizzera</option>
+                                <option value="3">Belgio</option>
+                            </select>
+                        </div>
+                        <div class="col-6 col-lg-2">
+                            <label for="cap">CAP</label>
+                            <input type="number" class="form-control" id="cap" maxlength="5" minlength="5">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputFile">Foto</label>
+                            <div class="input-group mb-3">
+                                <input type="file" class="form-control" id="inputFile">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <input type="checkbox" id="acceptTerms">
+                            <label for="acceptTerms">Accetta per proseguire</label>
+                            <div class="mt-2">
+                                <input type="submit" value="Salva" class="btn btn-primary">
+                                <input type="reset" value="Svuota" id="reset" class="btn btn-warning">
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-6">
-                        <div>Cognome</div>
-                        <input type="text" class="form-control" placeholder="Cognome">
-                    </div>
-                    <div class="col-6">
-                        <div class="input-group">
-                            <div>Email</div>
-                            <span class="input-group-text mb-3" id="basic-addon1">@</span>
-                            <input type="text" class="form-control" placeholder="Email" aria-label="Username" aria-describedby="basic-addon1">
-                        </div>   
-                    </div>
-                    <div class="col-6">
-                        <div>Password</div>
-                        <input type="password" class="form-control">
-                    </div>
-                </div>
-              
-                
-                </ul>
+                </form>
             </div>
         </div>
-        
-
-
-
-
-
+    
     </main>
 </body>
 </html>
 
 
 
-
-<!-- <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-    Link with href
-  </a>
-  <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-    Button with data-bs-target
-  </button>
-  
-  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-header">
-      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-      <div>
-        Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
-      </div>
-      <div class="dropdown mt-3">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
-          Dropdown button
-        </button>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
-        </ul>
-      </div>
-    </div>
-  </div> -->
 
 
