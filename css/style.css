@@ -1,15 +1,18 @@
+/* reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* font */
 body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* colori */
 .bgGray {
-    background-color:#dedbdb;
+    background-color: #e5e5e5;
 }
 
 .bgDarkBlue {
@@ -17,7 +20,6 @@ body {
 }
 
 /* header */
-
 header {
     height: 70px;
 }
@@ -40,13 +42,11 @@ nav input:focus-visible {
 }
 
 /* main */
-
 .mainWrapper {
     height: calc(100vh - 70px);
 }
 
 /* sidemenu */
-
 .sideMenu {
     background-color: #051e34;
     background-image: url(../img/sidebar-bg.png);
@@ -55,7 +55,6 @@ nav input:focus-visible {
 }
 
 /* maincontainer */
-
 .mainContainer {
     flex-grow: 1;
     height: calc(100vh - 70px);
@@ -67,18 +66,15 @@ nav input:focus-visible {
     height: 1.5rem; 
 }
 
+tr:hover {
+    background-color: #e5e5e5 ;
+}
+
 .accordion-button:focus {
     box-shadow: none;
 }
 
-
-
-
-
-
-
-
-
+/* media */
 @media screen and (min-width: 992px) {
     .sideMenu {
         width: 150px;
