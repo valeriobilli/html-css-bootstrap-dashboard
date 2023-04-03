@@ -57,28 +57,23 @@ nav input:focus-visible {
 /* maincontainer */
 
 .mainContainer {
-    background-color: antiquewhite;
     flex-grow: 1;
     height: calc(100vh - 70px);
     overflow-y: auto;
 }
 
-
-/* debug */
-
-.debugBorder {
-    border: 1px solid red;
-}
-
-.debugNone {
-    display: none;
-}
-
-.debugIcon {
+.myTableIcon {
     width: 1.5rem;
-    height: 1.5rem;
-    
+    height: 1.5rem; 
 }
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+
+
+
 
 
 
